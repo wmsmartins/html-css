@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* Medidas Absolutas  recomendação oficial da W3C usar px ou em.
+            cm, mm, in, px, pt, pc
+            
+            MedidasRelativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+            
+            /* lighter normal bold bolder */
+
+        }
+
+        h1{
+            /* shorthand font 
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'work Sans', sans-serif;
+        }
+
+        h2{
+            font: bold 2em 'work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalahndo com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam, nisi aliquam autem minus ea, blanditiis in a, distinctio iste esse quo error rem libero odit illum! Ad, esse laboriosam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis magnam temporibus obcaecati neque omnis! Sapiente eligendi non magni commodi porro, ex sunt accusantium cupiditate doloremque eaque expedita, repudiandae veniam quod?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod neque ullam eligendi beatae! Beatae dolorem ipsam nulla porro veniam pariatur repudiandae laboriosam fugit! Maiores est perferendis, qui numquam iusto inventore?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, exercitationem repudiandae sed alias tempore corrupti voluptate voluptas impedit ullam eaque, optio est? Magni, provident dolores necessitatibus ab nemo temporibus doloribus!</p>
+</body>
+</html>
