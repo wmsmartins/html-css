@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -27,8 +28,22 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(add) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
         }
 
         td.num {
@@ -55,13 +70,13 @@
         <caption>População das Unidades Federativas</caption>       
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>          
         </thead>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>                
+                <th scope="row">Total de Habitantes</th>                
                     <td class="num"><strong>203.062.512</strong></td>                
             </tr>
         </tfoot>
@@ -89,7 +104,7 @@
             <tr>
                 <td>Rio Grande do Sul</td>
                 <td class="num">10.882.965</td>
-            </tr>]
+            </tr>
             <tr>
                 <td>Pernambuco</td>
                 <td class="num">9.058.931</td>
