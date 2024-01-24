@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768){
-    i#burgur {
+@media screen and (min-width: 768px) {
+    i#burguer {
         display: none;
     }
     
+}
+
+menu {
+    display: block;
 }
