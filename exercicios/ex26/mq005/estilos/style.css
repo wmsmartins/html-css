@@ -6,6 +6,10 @@
     padding: 0px;
 }
 
+body, title {
+    text-align: center;
+}
+
 body, html {
     background-color: lightgray;
 }
